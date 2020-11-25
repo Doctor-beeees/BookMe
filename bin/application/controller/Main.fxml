@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <bottom>
+      <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: brown;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="579.0" fitWidth="606.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/assets/backdrop.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="189.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to BookMe">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+            <MenuButton fx:id="genreIn" layoutX="80.0" layoutY="483.0" mnemonicParsing="false" text="Genre&#10;">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Fantasy" />
+                <MenuItem mnemonicParsing="false" text="Humor" />
+                  <MenuItem mnemonicParsing="false" text="Horror" />
+                  <MenuItem mnemonicParsing="false" text="Romance" />
+                  <MenuItem mnemonicParsing="false" text="Non Fiction" />
+              </items>
+            </MenuButton>
+            <Button fx:id="surprise" layoutX="471.0" layoutY="546.0" mnemonicParsing="false" text="Surprise" />
+            <Button fx:id="search" layoutX="86.0" layoutY="557.0" mnemonicParsing="false" onAction="#setBookScene" text="Search" />
+            <Text fill="#fcfcfc" layoutX="456.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surprise me">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ratingIn" layoutX="81.0" layoutY="513.0" prefHeight="22.0" prefWidth="59.0" promptText="Rating " />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BookController">
+   <center>
+      <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: brown;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="452.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/assets/backdrop.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="292.0" fitWidth="190.0" layoutX="211.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/assets/marcus.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="78.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+            <Text layoutX="78.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+            <Text layoutX="78.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" />
+            <Text layoutX="77.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Ratings" />
+            <Text layoutX="79.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" />
+            <Button layoutX="439.0" layoutY="511.0" mnemonicParsing="false" onAction="#setMainScene" text="Home" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
