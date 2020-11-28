@@ -21,7 +21,7 @@
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Text>
-            <MenuButton fx:id="genreIn" layoutX="80.0" layoutY="483.0" mnemonicParsing="false" text="Genre&#10;">
+            <MenuButton fx:id="genreIn" layoutX="80.0" layoutY="483.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Genre&#10;">
               <items>
                 <MenuItem mnemonicParsing="false" text="Fantasy" />
                 <MenuItem mnemonicParsing="false" text="Humor" />
@@ -29,15 +29,39 @@
                   <MenuItem mnemonicParsing="false" text="Romance" />
                   <MenuItem mnemonicParsing="false" text="Non Fiction" />
               </items>
+               <font>
+                  <Font name="Arial" size="11.0" />
+               </font>
             </MenuButton>
-            <Button fx:id="surprise" layoutX="471.0" layoutY="546.0" mnemonicParsing="false" text="Surprise" />
-            <Button fx:id="search" layoutX="86.0" layoutY="557.0" mnemonicParsing="false" onAction="#setBookScene" text="Search" />
-            <Text fill="#fcfcfc" layoutX="456.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surprise me">
+            <Button fx:id="surprise" layoutX="456.0" layoutY="546.0" mnemonicParsing="false" onAction="#setSurpriseScene" style="-fx-background-color: white;" text="Surprise">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="search" layoutX="81.0" layoutY="546.0" mnemonicParsing="false" onAction="#setBookScene" style="-fx-background-color: white;" text="Search">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Button>
+            <Text fill="#fcfcfc" layoutX="462.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surprise me">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
             </Text>
             <TextField fx:id="ratingIn" layoutX="81.0" layoutY="513.0" prefHeight="22.0" prefWidth="59.0" promptText="Rating " />
+            <Text fill="WHITE" layoutX="186.0" layoutY="478.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unsure? Check out the classics">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="82.0" layoutY="478.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="classics" layoutX="264.0" layoutY="546.0" mnemonicParsing="false" onAction="#setClassicScene" style="-fx-background-color: white;" text="Classics">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </bottom>

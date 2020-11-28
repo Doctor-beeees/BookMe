@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 
 <BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BookController">
-   <center>
+   <bottom>
       <Pane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: brown;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="452.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
@@ -21,13 +21,56 @@
                   <Image url="@../../../data/assets/marcus.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="78.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
-            <Text layoutX="78.0" layoutY="499.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
-            <Text layoutX="78.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating" />
-            <Text layoutX="77.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Ratings" />
-            <Text layoutX="79.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" />
-            <Button layoutX="439.0" layoutY="511.0" mnemonicParsing="false" onAction="#setMainScene" text="Home" />
+            <Text fill="#f5f0f0" layoutX="102.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="85.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Text>
+            <Text fill="WHITE" layoutX="86.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Text>
+            <Text fill="#f5f2f2" layoutX="70.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Ratings:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Text>
+            <Text fill="#fff3f3" layoutX="88.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font></Text>
+            <Button layoutX="503.0" layoutY="23.0" mnemonicParsing="false" onAction="#setMainScene" style="-fx-background-color: white;" text="Home">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Text fill="#f5f0f0" layoutX="143.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meditations" wrappingWidth="82.779296875">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="143.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marcus Aurelius">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="143.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.2">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f2f2" layoutX="143.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="127,349">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="#fff3f3" layoutX="146.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non-Fiction">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
-   </center>
+   </bottom>
 </BorderPane>

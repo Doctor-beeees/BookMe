@@ -63,7 +63,42 @@ public class MainController {
 		personnelStage.show();	
 		
 	}
-	
+	public void setSurpriseScene(ActionEvent event) throws IOException {
+		
+		//String rating = ratingIn.getText();
+		//String genre = genreIn.getText();
+		
+		FXMLLoader bookLoader = new FXMLLoader();
+		bookLoader.setLocation(getClass().getResource("./Surprise.fxml"));
+		
+		Parent bookRoot = bookLoader.load();
+		Scene bookScene = new Scene(bookRoot);
+		
+				
+		Stage personnelStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		personnelStage.setScene(bookScene);
+		personnelStage.show();	
+		
+	}
+	public void setClassicScene(ActionEvent event) throws IOException {
+		
+		//String rating = ratingIn.getText();
+		//String genre = genreIn.getText();
+		
+		FXMLLoader classicLoader = new FXMLLoader();
+		classicLoader.setLocation(getClass().getResource("./Classic.fxml"));
+		
+		Parent classicRoot = classicLoader.load();
+		Scene bookScene = new Scene(classicRoot);
+		
+		ClassicController bookController = classicLoader.getController();
+		bookController.initializeClassic();
+		
+		Stage personnelStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		personnelStage.setScene(bookScene);
+		personnelStage.show();	
+		
+	}
 	
 
 }

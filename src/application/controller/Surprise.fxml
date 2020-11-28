@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: brown;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BookController">
+   <children>
+      <ImageView fitHeight="459.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/assets/backdrop.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="301.0" fitWidth="196.0" layoutX="202.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../data/assets/rhythm.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="511.0" layoutY="14.0" mnemonicParsing="false" onAction="#setMainScene" style="-fx-background-color: white;" text="Home">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="86.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="71.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="79.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="64.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="#Ratings:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="81.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="127.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rhythm Of War">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="128.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brandon Sanderson">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="134.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.7">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="134.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3,207">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="132.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fantasy">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="213.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Surprise Choice">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
