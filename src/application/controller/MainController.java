@@ -31,7 +31,8 @@ public class MainController {
 	//private TextField ratingIn; 
 	@FXML 
 	private MenuButton genreIn; 
-		
+	@FXML
+	private TextField ratingIn;
 	
 	
 	public void handle(ActionEvent event) throws IOException {
@@ -46,8 +47,8 @@ public class MainController {
 	 */
 	public void setBookScene(ActionEvent event) throws IOException {
 		
-		//String rating = ratingIn.getText();
-		//String genre = genreIn.getText();
+		String rating = ratingIn.getText();
+		String genre = genreIn.getText();
 		
 		FXMLLoader bookLoader = new FXMLLoader();
 		bookLoader.setLocation(getClass().getResource("./Book.fxml"));
@@ -55,8 +56,8 @@ public class MainController {
 		Parent bookRoot = bookLoader.load();
 		Scene bookScene = new Scene(bookRoot);
 		
-		//BookController bookController = bookLoader.getController();
-		//bookController.initializeZone(rating,genre);
+		BookController bookController = bookLoader.getController();
+		bookController.initializeBook(rating,genre);
 		
 		Stage personnelStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		personnelStage.setScene(bookScene);

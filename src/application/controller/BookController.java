@@ -23,11 +23,22 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import application.model.*;
 
 public class BookController {
 	
+	@FXML
+	private Text title;
+	@FXML
+	private Text author;
+	@FXML
+	private Text ratingIn;
+	@FXML
+	private Text numRatings;
+	@FXML
+	private Text genreIn;
 	
 	public void initializeBook(String rating, String genre) throws IOException {
 		
@@ -38,11 +49,29 @@ public class BookController {
 		Book pick = b.getBookBySelections(rating, genre); 
 		
 		
-		//TODO set the scene with pick values.
-	
+		title.setText(pick.getTitle());
+		author.setText(pick.getAuthor());
+		ratingIn.setText(pick.getRating());
+		numRatings.setText(pick.getNumRatings());
+		genreIn.setText(genre);
+		
 		
 	}
 		
+	public void initalizeSurprise() throws IOException {
+		Library b = new Library("BookMe");
+		b.loadBooks("./data/books.csv");
+		/*
+		Bookshelf pick = b.getBookByRandom();
+		title.setText(pick.getTitle());
+		author.setText(pick.getAuthor());
+		ratingIn.setText(pick.getRating());
+		numRatings.setText(pick.getNumRatings());
+		genreIn.
+		*/
+		
+		
+	}
 	
 	/**
 	 * @param event object that would be handled
