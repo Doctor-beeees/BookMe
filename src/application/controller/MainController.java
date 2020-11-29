@@ -65,8 +65,7 @@ public class MainController {
 	}
 	public void setSurpriseScene(ActionEvent event) throws IOException {
 		
-		//String rating = ratingIn.getText();
-		//String genre = genreIn.getText();
+		//initialize random load
 		
 		FXMLLoader bookLoader = new FXMLLoader();
 		bookLoader.setLocation(getClass().getResource("./Surprise.fxml"));

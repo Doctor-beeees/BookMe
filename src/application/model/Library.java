@@ -79,4 +79,16 @@ public class Library {
 		
 	}
 	
+
+	public Book getBookBySelections(String rating, String genre) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	public Book getBookByRandom() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 }

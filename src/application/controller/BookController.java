@@ -29,25 +29,19 @@ import application.model.*;
 public class BookController {
 	
 	
-	public void initializeBook(String rating, String Genre) throws IOException {
-		
-		//myZoneLabel.setText(zoneCode);
-		//zCode = zoneCode;
-		//p = new Park("Jurrasic Park");
+	public void initializeBook(String rating, String genre) throws IOException {
 		
 		
-	//	p.loadZones( "data/zones.csv" );
-		//p.loadDinosaurs( "data/dinos.csv" );
+		Library b = new Library("BookMe");
+		b.loadBooks("./data/books.csv");
+		
+		Book pick = b.getBookBySelections(rating, genre); 
 		
 		
-	
+		//TODO set the scene with pick values.
 	
 		
 	}
-		
-		
-		
-		
 		
 	
 	/**
@@ -63,8 +57,7 @@ public class BookController {
 		mainStage.show();	
 		
 
-		
-		//System.out.println("Hello World");
+	
 	}
 	
 }
