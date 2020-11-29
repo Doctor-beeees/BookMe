@@ -23,6 +23,12 @@ public class Bookshelf {
 		this.genre = genre;
 	}
 	
+	public void addBook(Book b){
+		this.shelf.add(b);
+	}
 	
+	public ArrayList<Book> getBooks(){
+		return this.shelf;
+	}
 	
 }
