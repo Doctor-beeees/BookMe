@@ -6,7 +6,16 @@ public class Book {
 	private String rating;
 	private String numRatings;
 	
-	public Book(String title, String author, String rating,  String numRatings){
+	public Book(String title, String author, String rating,  String numRatings)
+	{
+		this.title = title;
+		this.author = author;
+		this.rating = rating;
+		this.numRatings = numRatings;
+	}
+	
+	public Book()
+	{
 		
 	}
 

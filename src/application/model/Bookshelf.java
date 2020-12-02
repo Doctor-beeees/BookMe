@@ -10,6 +10,12 @@ public class Bookshelf {
 		setGenre(genre);
 		this.shelf = new ArrayList<Book>();
 	}
+	
+	public Bookshelf()
+	{
+		
+	}
+	
 	/**
 	 * @return the genre
 	 */

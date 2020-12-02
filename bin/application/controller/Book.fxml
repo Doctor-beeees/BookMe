@@ -45,27 +45,27 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Text fill="#f5f0f0" layoutX="143.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meditations" wrappingWidth="82.779296875">
+            <Text fx:id="title" fill="#f5f0f0" layoutX="143.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meditations" wrappingWidth="82.779296875">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="143.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marcus Aurelius">
+            <Text fx:id="author" fill="WHITE" layoutX="143.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marcus Aurelius">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="143.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.2">
+            <Text fx:id="rating" fill="WHITE" layoutX="143.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.2">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Text>
-            <Text fill="#f5f2f2" layoutX="143.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="127,349">
+            <Text fx:id="numRatings" fill="#f5f2f2" layoutX="143.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="127,349">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
             </Text>
-            <Text fill="#fff3f3" layoutX="146.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non-Fiction">
+            <Text fx:id="genre" fill="#fff3f3" layoutX="146.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non-Fiction">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>

@@ -65,8 +65,6 @@ public class Library {
 					s.addBook(b);
 					addShelf(s);
 				}
-				
-				
 			}
 			
 			input.close();
@@ -80,13 +78,35 @@ public class Library {
 	}
 	
 
+
 	public Book getBookBySelections(String rating, String genre) {
 		// TODO Auto-generated method stub
+		
+
+		// get book genre
+		// rating is inside the book class
+		// make sure you are in the right shelf and then filter by ratings
+		
+		
 		return null;
 	}
 	
 	public Book getBookByRandom() {
 		// TODO Auto-generated method stub
+		Bookshelf newBShelf = new Bookshelf();
+		Book newBook = new Book();
+		int iIndex = 0;
+		
+		for ( Book currBook : newBShelf.getBooks() )
+		{
+			if ( currBook.equals( newBShelf.getGenre() ) )
+			{
+				
+			}
+		}
+		
+		
+		
 		return null;
 	}
 
