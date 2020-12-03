@@ -27,6 +27,13 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import application.model.*;
 
+/**
+ * Part of the application.controller class: The class to handle the texts for the title, author,
+ * rating, number of ratings, and the home button.
+ * 
+ * @author	lvz774
+ * @version 1.0
+ */
 public class BookController {
 	
 	@FXML
@@ -40,6 +47,14 @@ public class BookController {
 	@FXML
 	private Text genreIn;
 	
+	/**
+	 * Initializes the Book view of the book the user selected. Calls the method from the Library class
+	 * to load the books and gets the book by searching by rating and genre.
+	 * 
+	 * @param	rating		the rating of the book.
+	 * @param	genre		the genre of the book.
+	 * @throws	IOException if there was an error loading the book data.
+	 */
 	public void initializeBook(String rating, String genre) throws IOException {
 		
 		
@@ -58,6 +73,11 @@ public class BookController {
 		
 	}
 		
+	/**
+	 * Initializes the Book view with a random book from the library.
+	 * 
+	 * @throws IOException if there is an error loading the book data.
+	 */
 	public void initalizeSurprise() throws IOException {
 		Library b = new Library("BookMe");
 		b.loadBooks("./data/books.csv");
@@ -74,8 +94,9 @@ public class BookController {
 	}
 	
 	/**
-	 * @param event object that would be handled
-	 * sets the scene to main scene
+	 * Returns to the Main view when the user clicks "home".
+	 * 
+	 * @param event object that would be handled.
 	 */
 	public void setMainScene(ActionEvent event) throws IOException {
 		

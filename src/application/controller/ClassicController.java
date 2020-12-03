@@ -31,6 +31,11 @@ public class ClassicController {
 		@FXML
 		private ListView<String>classics;
 		
+	/**
+	 * Displays the list of some of the "classic" books by title and author.
+	 * 
+	 * @throws IOException if the Classic.fxml file fails to load.
+	 */
 	public void initializeClassic() throws IOException {
 			
 		
@@ -51,8 +56,10 @@ public class ClassicController {
 			
 	
 	/**
-	 * @param event object that would be handled
-	 * sets the scene to main scene
+	 * Returns to the Main view when the user clicks "home".
+	 * 
+	 * @param  event 		object that would be handled.
+	 * @throws IOException	if there is an error loading the Main.fxml file.
 	 */
 	public void setMainScene(ActionEvent event) throws IOException {
 		

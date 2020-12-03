@@ -16,6 +16,13 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+/**
+ * Part of the application.controller package: Handles the events from the controllers of the Main.fxml
+ * document.
+ * 
+ * @author	lvz774
+ * @version 1.0
+ */
 public class MainController {
 	
 
@@ -42,8 +49,10 @@ public class MainController {
 
 	
 	/**
-	 * @param event object that would be handled
-	 * sets the scene to appropriate scene
+	 * Handles the event when the user clicks "search" to search for a book by rating and genre.
+	 * 
+	 * @param 	event		object that would be handled.
+	 * @throws	IOException	if there is an error loading the Book.fxml file.
 	 */
 	public void setBookScene(ActionEvent event) throws IOException {
 		
@@ -64,6 +73,13 @@ public class MainController {
 		personnelStage.show();	
 		
 	}
+	
+	/**
+	 * Handles the event when the user clicks "surprise" to show a random book.
+	 * 
+	 * @param	event		object that would be handled.
+	 * @throws	IOException if there is an error loading the Surprise.fxml document.
+	 */
 	public void setSurpriseScene(ActionEvent event) throws IOException {
 		
 		//initialize random load
@@ -80,6 +96,13 @@ public class MainController {
 		personnelStage.show();	
 		
 	}
+	
+	/**
+	 * Handles the event when the user clicks "classic" to display the classic titles.
+	 * 
+	 * @param	event		object that would be handled.
+	 * @throws	IOException	if there is an error loading the Classic.fxml document.
+	 */
 	public void setClassicScene(ActionEvent event) throws IOException {
 		
 		//String rating = ratingIn.getText();
