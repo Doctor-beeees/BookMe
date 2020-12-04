@@ -51,7 +51,7 @@
                </font>
             </Button>
             <TextField fx:id="genreIn" layoutX="81.0" layoutY="482.0" prefHeight="22.0" prefWidth="59.0" promptText="Genre" />
-            <Text fill="WHITE" layoutX="105.0" layoutY="442.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Genres: Fantasy, Horror, Humor, Adventure, Non Fiction">
+            <Text fill="WHITE" layoutX="105.0" layoutY="442.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Genres: Fantasy, Horror, Humor, Fiction, Non Fiction">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
