@@ -21,18 +21,6 @@
                   <Font name="Arial Bold" size="24.0" />
                </font>
             </Text>
-            <MenuButton fx:id="genreIn" layoutX="80.0" layoutY="483.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Genre&#10;">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Fantasy" />
-                <MenuItem mnemonicParsing="false" text="Humor" />
-                  <MenuItem mnemonicParsing="false" text="Horror" />
-                  <MenuItem mnemonicParsing="false" text="Romance" />
-                  <MenuItem mnemonicParsing="false" text="Non Fiction" />
-              </items>
-               <font>
-                  <Font name="Arial" size="11.0" />
-               </font>
-            </MenuButton>
             <Button fx:id="surprise" layoutX="456.0" layoutY="546.0" mnemonicParsing="false" onAction="#setSurpriseScene" style="-fx-background-color: white;" text="Surprise">
                <font>
                   <Font name="Arial Bold" size="18.0" />
@@ -46,7 +34,7 @@
                   <Font name="Arial" size="18.0" />
                </font>
             </Text>
-            <TextField fx:id="ratingIn" layoutX="81.0" layoutY="513.0" prefHeight="22.0" prefWidth="59.0" promptText="Rating " />
+            <TextField fx:id="ratingIn" layoutX="82.0" layoutY="514.0" prefHeight="22.0" prefWidth="59.0" promptText="Rating " />
             <Text fill="WHITE" layoutX="186.0" layoutY="478.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unsure? Check out the classics">
                <font>
                   <Font name="Arial" size="18.0" />
@@ -62,6 +50,12 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Button>
+            <TextField fx:id="genreIn" layoutX="81.0" layoutY="482.0" prefHeight="22.0" prefWidth="59.0" promptText="Genre" />
+            <Text fill="WHITE" layoutX="105.0" layoutY="442.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Genres: Fantasy, Horror, Humor, Fiction, Non Fiction">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
    </bottom>

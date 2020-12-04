@@ -14,11 +14,6 @@
             <Image url="@../../../data/assets/backdrop.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="301.0" fitWidth="196.0" layoutX="202.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../data/assets/rhythm.jpg" />
-         </image>
-      </ImageView>
       <Button layoutX="511.0" layoutY="14.0" mnemonicParsing="false" onAction="#setMainScene" style="-fx-background-color: white;" text="Home">
          <font>
             <Font name="Arial Bold" size="18.0" />
@@ -49,27 +44,27 @@
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="127.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rhythm Of War">
+      <Text fx:id="title" fill="WHITE" layoutX="126.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rhythm Of War" wrappingWidth="433.8896484375">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="128.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brandon Sanderson">
+      <Text fx:id="author" fill="WHITE" layoutX="128.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brandon Sanderson">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="134.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.7">
+      <Text fx:id="rate" fill="WHITE" layoutX="134.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.7">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="134.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3,207">
+      <Text fx:id="numRate" fill="WHITE" layoutX="134.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3,207">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="132.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fantasy">
+      <Text fx:id="genreSet" fill="WHITE" layoutX="132.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fantasy">
          <font>
             <Font name="Arial Bold" size="14.0" />
          </font>

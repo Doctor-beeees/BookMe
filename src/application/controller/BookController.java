@@ -41,11 +41,11 @@ public class BookController {
 	@FXML
 	private Text author;
 	@FXML
-	private Text ratingIn;
+	private Text rate = new Text();
 	@FXML
-	private Text numRatings;
+	private Text numRate = new Text();
 	@FXML
-	private Text genreIn;
+	private Text genreSet = new Text();
 	
 	/**
 	 * Initializes the Book view of the book the user selected. Calls the method from the Library class
@@ -63,12 +63,13 @@ public class BookController {
 		
 		Book pick = b.getBookBySelections(rating, genre); 
 		
-		
 		title.setText(pick.getTitle());
 		author.setText(pick.getAuthor());
-		ratingIn.setText(pick.getRating());
-		numRatings.setText(pick.getNumRatings());
-		genreIn.setText(genre);
+		
+		rate.setText(pick.getRating());
+		numRate.setText(pick.getNumRatings());
+		genreSet.setText(genre);
+		
 		
 		
 	}
@@ -79,16 +80,18 @@ public class BookController {
 	 * @throws IOException if there is an error loading the book data.
 	 */
 	public void initalizeSurprise() throws IOException {
+		
 		Library b = new Library("BookMe");
 		b.loadBooks("./data/books.csv");
-		/*
-		Bookshelf pick = b.getBookByRandom();
+		
+		Book pick = b.getBookByRandom();
 		title.setText(pick.getTitle());
 		author.setText(pick.getAuthor());
-		ratingIn.setText(pick.getRating());
-		numRatings.setText(pick.getNumRatings());
-		genreIn.
-		*/
+		rate.setText(pick.getRating());
+		numRate.setText(pick.getNumRatings());
+		genreSet.setText("surprise");
+		
+		
 		
 		
 	}

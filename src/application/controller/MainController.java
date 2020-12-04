@@ -1,6 +1,7 @@
 package application.controller;
 
-import java.awt.TextField;
+import javafx.scene.control.TextField;
+
 import java.io.IOException;
 
 import application.controller.BookController;
@@ -37,7 +38,7 @@ public class MainController {
 	//@FXML
 	//private TextField ratingIn; 
 	@FXML 
-	private MenuButton genreIn; 
+	private TextField genreIn; 
 	@FXML
 	private TextField ratingIn;
 	
@@ -58,7 +59,6 @@ public class MainController {
 		
 		String rating = ratingIn.getText();
 		String genre = genreIn.getText();
-		
 		FXMLLoader bookLoader = new FXMLLoader();
 		bookLoader.setLocation(getClass().getResource("./Book.fxml"));
 		
@@ -82,7 +82,6 @@ public class MainController {
 	 */
 	public void setSurpriseScene(ActionEvent event) throws IOException {
 		
-		//initialize random load
 		
 		FXMLLoader bookLoader = new FXMLLoader();
 		bookLoader.setLocation(getClass().getResource("./Surprise.fxml"));
@@ -90,6 +89,8 @@ public class MainController {
 		Parent bookRoot = bookLoader.load();
 		Scene bookScene = new Scene(bookRoot);
 		
+		BookController bookController = bookLoader.getController();
+		bookController.initalizeSurprise();
 				
 		Stage personnelStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		personnelStage.setScene(bookScene);

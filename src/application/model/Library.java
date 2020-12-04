@@ -4,9 +4,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Part of the application.model package:
+ * document.
+ * 
+ * @author	lvz774
+ * @version 1.0
+ */
 public class Library {
+	
 	private ArrayList<Bookshelf> lib; 
 	private String name;
 	
@@ -46,7 +55,7 @@ public class Library {
 				String author = values[1];
 				String rating = values[2];
 				String numRating = values[3];
-				String genre = values[3];
+				String genre = values[4];
 
 
 				Book b = new Book(title,author, rating, numRating);
@@ -79,36 +88,49 @@ public class Library {
 	
 
 
-	public Book getBookBySelections(String rating, String genre) {
-		// TODO Auto-generated method stub
-		
 
-		// get book genre
-		// rating is inside the book class
-		// make sure you are in the right shelf and then filter by ratings
-		
-		
-		return null;
+		public Book getBookBySelections(String rating, String genre) {
+
+	        Book ret = new Book("No", "Books", "Were", "Found");
+	        
+	        float searchRating =  Float.parseFloat(rating);
+	        int iIndex =0;
+	        int jIndex = 0;
+
+	        for(int i = 0; i < this.getShelf().size(); i++){
+	        	
+	            if(this.getShelf().get(i).getGenre().contains(genre)){
+	            	iIndex = i;
+	            	for(int j = 0; j < this.getShelf().get(iIndex).getBooks().size(); j++){
+	            		float floatRating = Float.parseFloat(this.getShelf().get(iIndex).getBooks().get(j).getRating());        
+	                    if(floatRating >= searchRating)
+	                    	jIndex = j;
+	                    	ret = this.getShelf().get(iIndex).getBooks().get(jIndex);
+	                    	
+
+	                    }
+
+	                }
+
+	            }
+
+	        
+    
+	        return ret;
+
+	    
 	}
 	
-	public Book getBookByRandom() {
-		// TODO Auto-generated method stub
-		Bookshelf newBShelf = new Bookshelf();
-		Book newBook = new Book();
-		int iIndex = 0;
-		
-		for ( Book currBook : newBShelf.getBooks() )
-		{
-			if ( currBook.equals( newBShelf.getGenre() ) )
-			{
-				
-			}
-		}
-		
-		
-		
-		return null;
-	}
+	    public Book getBookByRandom() {
 
-	
+	        Book newBook = new Book("No","Books","Were","Found");
+            Random rand = new Random();
+	        int shelfIndex = rand.nextInt( getShelf().size());
+	        int bookIndex = rand.nextInt((this.getShelf().get(shelfIndex).getBooks().size()));
+	        newBook = getShelf().get(shelfIndex).getBooks().get(bookIndex);
+	        
+
+	        return newBook;
+
+	    }
 }

@@ -2,6 +2,13 @@ package application.model;
 
 import java.util.ArrayList;
 
+/**
+ * Part of the application.model package:
+ * document.
+ * 
+ * @author	lvz774
+ * @version 1.0
+ */
 public class Bookshelf {
 	private String genre;
 	private ArrayList<Book> shelf;
@@ -11,10 +18,6 @@ public class Bookshelf {
 		this.shelf = new ArrayList<Book>();
 	}
 	
-	public Bookshelf()
-	{
-		
-	}
 	
 	/**
 	 * @return the genre
